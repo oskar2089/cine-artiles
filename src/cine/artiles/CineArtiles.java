@@ -8,7 +8,7 @@ package cine.artiles;
 import javax.swing.JOptionPane;
 
 /**
- * @version V1 
+ * @version V2 
  * @author Jan Oskar
  */
 public class CineArtiles {

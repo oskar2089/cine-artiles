@@ -6,26 +6,24 @@
 package cine.artiles;
 
 /**
- * @version V1
+ * @version V2
  * @author Jan Oskar
  */
 public class CineArtilesReserva {
     
     //Variables compartidas por las clases
     private	int	numAsientosFree;
-    private	int	numAsientosCinema;
     
 
     /**
      * Constructor del CineArtilesReserva
      * 
      * Descripcion:
-     * Asigna valor a las variables que le pasan
+     * Asigna valor  numAsientosFree
      * @param asientos
      */
     public CineArtilesReserva(int asientos){
-        numAsientosCinema=asientos;
-        numAsientosFree=numAsientosCinema;
+        numAsientosFree=asientos;
     }   
 
     /**
@@ -36,7 +34,7 @@ public class CineArtilesReserva {
      * @param nasientos
      */
     public void	reservar(int nasientos){
-        numAsientosFree=numAsientosFree-nasientos;  
+        numAsientosFree-=nasientos;  
     }
         
     /**
