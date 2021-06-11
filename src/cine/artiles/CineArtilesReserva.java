@@ -6,7 +6,7 @@
 package cine.artiles;
 
 /**
- * @version V2
+ * @version V3
  * @author Jan Oskar
  */
 public class CineArtilesReserva {

@@ -8,7 +8,7 @@ package cine.artiles;
 import javax.swing.JOptionPane;
 
 /**
- * @version V2 
+ * @version V3 
  * @author Jan Oskar
  */
 public class CineArtiles {
@@ -26,7 +26,7 @@ public class CineArtiles {
      */
     public static void main(String[] args) {
         //variables del main
-        int option;
+        int option=0;
         int asientos;
         
         //creamos objeto CineArtilesReserva
@@ -81,6 +81,9 @@ public class CineArtiles {
                 option=0;
                 break;
                 
+            default://caso donde se equivica el usuario
+                JOptionPane.showMessageDialog(null, "Escriba un numero valido");
+                break;    
            } 
         } while (option != 0);
          JOptionPane.showMessageDialog(null, "Gracias,Esperamos verle pronto");
